@@ -1,3 +1,8 @@
+/* Mengatur keseluruhan web */
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 /* Mengatur ukuran header dan posisi dari header */
 .header {
     background-color: white;
@@ -7,8 +12,10 @@
     top: 0px;
     left: 0px;
     box-sizing: border-box;
-    border-bottom: solid ;
+    padding: 10px 50px;
 }
+
+
 
 /* Mengatur posisi elemen di dalam header */
 #menu-nav {
@@ -19,20 +26,38 @@
 }
 
 /* Megatur tampilan button */
-#menu-nav > button {
-    margin-left: 20px;
-    width: 80px;
-    height: 40px;
-    
-    border-radius: 20px;
-    border: solid 2px;
-    
-    font-size: 15px;
-    background-color: transparent;
+#menu-nav > a {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu-nav > a:hover,
+#menu-nav > a.active {
+    background-color: black;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Mengatur kalimat di dalam button agar menjadi hitam dan tidak ada garis bawah */
 a {
     text-decoration: none;
     color: black;
+}
+
+.main-content {
+    padding: 30px 50px;
+}
+
+#office {
+    line-height: 1.5; 
+    color: darkgray; 
+    padding-right: 26%; 
+    text-align: justify; 
 }

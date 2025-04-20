@@ -1,0 +1,38 @@
+/* Mengatur ukuran header dan posisi dari header */
+.header {
+    background-color: white;
+    display: flex;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    border-bottom: solid ;
+}
+
+/* Mengatur posisi elemen di dalam header */
+#menu-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+/* Megatur tampilan button */
+#menu-nav > button {
+    margin-left: 20px;
+    width: 80px;
+    height: 40px;
+    
+    border-radius: 20px;
+    border: solid 2px;
+    
+    font-size: 15px;
+    background-color: transparent;
+}
+
+/* Mengatur kalimat di dalam button agar menjadi hitam dan tidak ada garis bawah */
+a {
+    text-decoration: none;
+    color: black;
+}

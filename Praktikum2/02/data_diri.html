@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Rumah</title>
+    <link rel="stylesheet" href="style_data.css">
+</head>
+<body>
+    <div class="tempat">
+        <div class="form">
+            <h1>Form Pengumpulan Data Diri</h1>
+            
+            <from action="" metohd="post">
+
+                <label for="nama_lengkap">Nama Lengkap:</label>
+                <input type="text" name="nama" id="nama" required>
+
+                <label for="NIS">NIS:</label>
+                <input type="text" name="nis" id="nis" required>
+
+                <label for="">kelas:</label>
+                <select name="kelas" id="kelas">
+                    <option value="pilih kelas">pilih kelas</option>
+                    <option value="X">X</option>
+                    <option value="XI">XI</option>
+                    <option value="XII">XII</option>
+                </select>
+
+                <label for="tanggal_lahir">Tanggal Lahir:</label>
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir" required>
+
+                <label for="alamat">Alamat:</label>
+                <textarea name="alamat" id="alamat" rows="3" required></textarea>
+
+                <label for="nomer_telepon"> Nomor Telepon/HP:</label>
+                <input type="tel" name="nomer_telepone" id="nomer_telepone" required>
+
+                <label for="upload_foto">Upload foto (JPG/PNG):</label>
+                <input type="file" name="upload_foto" id="upload_foto" required>
+                
+                <button type="submit" name="submit"> Kirim Data</button>
+
+            </from>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    #header {
+        background-color: gray;
+        border-bottom: 3px solid black;
+        display: flex;
+        align-items: center;}
+
+    .header-title {
+        font-family: Arial, Helvetica, sans-serif}
+        
+    .search-box {
+        margin: auto 0px 20px auto;}
+
+    .search-button{
+        margin: auto 10px 20px 12px;}
+
+}

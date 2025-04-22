@@ -205,7 +205,6 @@ h2 {
     color: #666;
 }
 
-/* Pencapaian */
 .achievment {
     display: flex;
     justify-content: center;
@@ -233,7 +232,6 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Mengatur tampilan link secara umum */
 a {
     text-decoration: none;
     color: black;
@@ -250,7 +248,6 @@ section {
     text-align: justify;
 }
 
-/* Galeri gambar utama */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;

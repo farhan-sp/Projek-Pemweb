@@ -290,7 +290,6 @@ section {
     text-align: center;
 }
 
-/* Lightbox effect */
 .lightbox {
     display: none;
     position: fixed;
@@ -323,7 +322,6 @@ section {
     z-index: 1000;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;

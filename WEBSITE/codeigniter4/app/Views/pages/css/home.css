@@ -1,0 +1,135 @@
+/* Reset dan font dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    padding: 120px 20px 80px;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-img {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Stakeholder Section */
+.centered-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.centered-section h1 {
+    font-size: 32px;
+    color: #004080;
+    margin-bottom: 30px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logos img {
+    max-height: 80px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.partner-logos img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.centered-title {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.centered-title h2 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px 60px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.client-img img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: #ddd; /* fallback background if src is empty */
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.client-name {
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 5px;
+}
+
+.client-position {
+    color: #888;
+    font-size: 0.9rem;
+}

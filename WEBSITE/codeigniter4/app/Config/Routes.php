@@ -1,30 +1,25 @@
 <?php
 
+use App\Controllers\MailSender;
 use CodeIgniter\Router\RouteCollection;
 
 /**
  * @var RouteCollection $routes
  */
 
-
-
 // ------------------- HTML ----------------------
-// Nav
-$routes->get('/nav.css', 'Style::nav');
-
 // Home
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Pages::Home');
 $routes->get('/home', 'Pages::home');
 $routes->get('/index', 'Pages::home');
 // About
 $routes->get('/about', 'Pages::about');
 // Sales
 $routes->get('/sales', 'Pages::sales');
+// Unit Description
+$routes->get("/unit", 'Pages::unit_description');
 // Contact
 $routes->get('/contact', 'Pages::contact');
 
-// ------------------- CSS ----------------------
-// home
-// $routes->get('/css/home.css', 'Style::home');
-// navigasi
-// $routes->get('/css/home.css', 'Style::nav');
+// Send Message
+$routes->post('/contact', 'MailSender::gmail');

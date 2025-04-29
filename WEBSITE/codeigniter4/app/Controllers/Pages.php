@@ -19,6 +19,11 @@ class Pages extends BaseController
         return view('/pages/sales.php');
     }
 
+    public function unit_description() 
+    {
+        return view('/pages/unit_description.php');
+    }
+
     public function contact() 
     {
         return view('/pages/contact.php');

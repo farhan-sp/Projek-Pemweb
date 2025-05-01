@@ -57,32 +57,14 @@
                     </div>
                 </div>
 
-                <!-- Achievements -->
-                <div class="section achievements">
-                    <h2>Our Achievements</h2>
-                    <div class="achievement-cards">
-                        <div class="achievement-card">
-                            <div class="achievement-img">
-                                <img src="elegant-certificate-template-with-gold-details_255246-1299.avif" alt="Penghargaan 2022">
+                <!-- Team -->
+                <div class="section Team">
+                    <h2>Our Team</h2>
+                    <div class="team-cards">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="img/Team.jpg" alt="Team">
                             </div>
-                            <h3>2022</h3>
-                            <p>Penghargaan sebagai Pengembang Properti Terbaik di Sulawesi Tenggara untuk kategori Rumah Subsidi Berkualitas.</p>
-                        </div>
-                        
-                        <div class="achievement-card">
-                            <div class="achievement-img">
-                                <img src="elegant-certificate-template-with-gold-details_255246-1299.avif" alt="Penghargaan 2023">
-                            </div>
-                            <h3>2023</h3>
-                            <p>Berhasil menyelesaikan 250 unit rumah subsidi dengan tingkat kepuasan pelanggan mencapai 95% dan zero complaint.</p>
-                        </div>
-                        
-                        <div class="achievement-card">
-                            <div class="achievement-img">
-                                <img src="elegant-certificate-template-with-gold-details_255246-1299.avif" alt="Pencapaian 2024">
-                            </div>
-                            <h3>2024</h3>
-                            <p>Ekspansi bisnis dengan meluncurkan GSK Properti sebagai anak perusahaan spesialis pengembangan properti premium.</p>
                         </div>
                     </div>
                 </div>

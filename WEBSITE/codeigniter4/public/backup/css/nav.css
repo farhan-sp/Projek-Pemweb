@@ -8,7 +8,7 @@
   --footer-bg: #002244;
 }
 
-/* Reset dasar */
+/* Basic setup */
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +17,10 @@
 }
 
 body {
-  background-color: lavender;
+  background-color: #f8f9fa;
   color: var(--text-color);
   line-height: 1.6;
-  padding-top: 60px; /* Untuk memberi ruang ke header fixed */
+  padding-top: 60px; /* Space for fixed header */
 }
 
 /* Header dan Navigasi */
@@ -84,7 +84,7 @@ nav {
   width: calc(100% - 30px);
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
   background-color: var(--footer-bg);
   color: white;
@@ -148,14 +148,14 @@ footer {
 .footer-contact p {
   margin-bottom: 15px;
   display: flex;
-  align-items: start;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer-contact i {
   color: var(--accent-color);
   width: 20px;
-  text-align: start;
+  text-align: center;
 }
 
 .social-icons {
@@ -189,52 +189,126 @@ footer {
   color: #aaa;
 }
 
-/* Container */
+/* Container for consistent width */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Animasi */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Navigation */
+/* Responsive */
 @media (max-width: 768px) {
   nav {
-    flex-direction: row;
-    flex-wrap: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      height: 40px;
+      margin-bottom: 0;
+    }
+  
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      justify-content: flex-end;
+      flex: 1;
+    }
+  
+    .nav-bar a {
+      font-size: 0.7rem;
+      padding: 8px 10px;
+      margin: 4px 0;
+    }
+  
+    header {
+      padding: 10px 15px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  .testimonial-card {
+      max-width: 90%;
+  }
+  
+  
+  .about-content {
+      flex-direction: column;
+  }
+  
+  .hero h1 {
+      font-size: 36px;
+  }
+  
+  .navbar {
+      flex-direction: column;
+      padding: 15px 0;
+  }
+  
+  .nav-links {
+      margin-top: 15px;
+  }
+  
+  .nav-links li {
+      margin-left: 15px;
+  }
+
+  .gallery-container {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
   }
 
-  .logo {
-    height: 40px;
+  .gallery-item {
+    width: 90%;
   }
 
-  .nav-bar {
-    flex-wrap: wrap;
-    gap: 7px;
-    justify-content: flex-end;
-    flex: 1;
+  .lightbox img {
+    width: 95vw;
+    height: auto;
   }
 
-  .nav-bar a {
-    font-size: 0.75rem;
-    padding: 8px 10px;
-    margin: 4px 0;
+  .visi_misi {
+      flex-direction: column;
+      gap: 20px;
   }
 
-  header {
-    padding: 10px 15px;
+  .achievment {
+      flex-direction: column;
+  }
+
+  h2 {
+      font-size: 1.6rem;
+      margin-top: 60px;
+    }
+  
+    .house img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .details table {
+      font-size: 0.95rem;
+    }
+  
+    .details td, .details th {
+      padding: 15px;
+    }
+
+    .contact-container {
+      flex-direction: column;
+      gap: 50px;
+  }
+
+  .contact-form button {
+      width: 100%;
   }
 }

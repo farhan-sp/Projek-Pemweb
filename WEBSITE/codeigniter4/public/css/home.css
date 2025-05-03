@@ -1,27 +1,12 @@
-/* Reset dan font dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Hero Section */
-.hero {
+/* Main Section */
+.main {
     position: relative;
     padding: 140px 20px 80px;
     text-align: center;
     overflow: hidden;
-    background-color: #f8f9fa;
 }
 
-.hero::before {
+.main::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -33,54 +18,55 @@ body {
     z-index: 0;
 }
 
-.hero-content {
+.main-content {
     position: relative;
     z-index: 1;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
-.hero h1 {
+.main h1 {
     font-size: 48px;
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  animation: fadeInUp 0.8s ease;
-  color: white;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
-
-.hero p {
+.main p {
     font-size: 1.125rem;
-    margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  animation: fadeInUp 0.8s ease;
-  color: white;
-  margin-top: 50px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-top: 20px;
 }
 
-.hero-img {
+.main-img {
     margin-top: 30px;
     max-width: 100%;
-    height: auto;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
 }
 
-/* Stakeholder Section */
+/* Sections */
 .centered-section {
     text-align: center;
     padding: 80px 20px;
-    background-color: #fff;
 }
 
-.centered-section h1 {
-    font-size: 2rem;
-    color: #004080;
+.centered-title {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    text-align: center;
     margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
 }
 
+/* Partner Logos */
 .partner-logos {
     display: flex;
     justify-content: center;
@@ -90,26 +76,10 @@ body {
 
 .partner-logos img {
     max-height: 80px;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.partner-logos img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
-}
-
-/* Testimonials Section */
-.centered-title {
-    text-align: center;
-    padding: 60px 20px 20px;
-}
-
-.centered-title h2 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 30px;
-}
-
+/* Testimonials */
 .testimonial-carousel {
     display: flex;
     flex-wrap: wrap;
@@ -119,13 +89,16 @@ body {
 }
 
 .testimonial-card {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 16px;
-    max-width: 500px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 30px;
+    flex: 1 1 400px;
+    box-shadow: var(--box-shadow);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid var(--accent-color);
 }
 
 .testimonial-card:hover {
@@ -138,41 +111,15 @@ body {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
-    background-color: #ddd;
 }
 
 .testimonial-text {
     font-style: italic;
-    color: #666;
+    color: var(--light-text);
     margin-bottom: 20px;
-    font-size: 1rem;
 }
 
 .client-name {
     font-weight: 700;
-    color: #004080;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-.client-position {
-    color: #888;
-    font-size: 0.95rem;
-}
-
-
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .testimonial-card {
-        padding: 30px;
-    }
+    color: var(--primary-color);
 }

@@ -1,0 +1,133 @@
+/* Judul halaman */
+h2 {
+    max-width: 1200px;
+    margin: 100px auto 30px;
+    color: #004080;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Konten utama */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+  }
+  
+  /* Galeri gambar */
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .gallery-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: filter 0.3s;
+  }
+  
+  .gallery-item:hover img {
+    filter: brightness(0.85);
+  }
+  
+  .gallery-desc {
+    padding: 16px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lightbox.active {
+    display: flex;
+  }
+  
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Tombol About Unit */
+  .description a {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #004080;
+    border: 1px solid #004080;
+    border-radius: 8px;
+    padding: 10px 24px;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+  }
+  
+  .description a:hover {
+    background: #004080;
+    color: #fff;
+  }
+
+  /* Location */
+  .location-section > iframe{
+    width: 100%;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .gallery-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gallery-item {
+      width: 90%;
+    }
+  
+    .lightbox img {
+      width: 95vw;
+      height: auto;
+    }
+  }
+  

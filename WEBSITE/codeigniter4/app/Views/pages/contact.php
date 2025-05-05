@@ -7,8 +7,9 @@
     <title>GSK Properti</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/contact.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/contact.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,8 @@
                 <div class="whatsapp-content">
                     <i class="fab fa-whatsapp"></i>
                     <h2>Let's Connect</h2>
-                    <p>Want to collaborate with us? Reach out through WhatsApp for quick responses!</p>
+                    <p>Want to collaborate with us? Contact us via WhatsApp to get a quick response!</p>
+                    <h3><i>"Always remember Must Have a Home Now !!!"</i></h3>
                     <a href="https://wa.me/6281357758855" target="_blank" class="whatsapp-button">Send Message</a>
                 </div>
             </div>
@@ -42,7 +44,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Get In Touch</h2>
-                    <p>We'd love to hear from you. Feel free to reach out with any questions or inquiries.</p>
+                    <p>We would love to hear your thoughts on the information we have provided. Feel free to contact us if you have any questions or queries.</p>
                 </div>
 
                 <div class="contact-container">
@@ -140,22 +142,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        $('#kirim-pesan').submit(function(e) {
-            $.ajax({
-                url: '/contact',
-                type: 'POST',
-                data: $(this).serialize(),
-                success: function(response) {
-                    alert("Pesan Berhasil Dikirim!");
-                },
-                error: function(xhr, status, error) {
-                    alert("Pesan Gagal!");
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

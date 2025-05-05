@@ -8,6 +8,21 @@
   --footer-bg: #002244;
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    font-size: 48px;
+    color: green;
+    z-index: 1000;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
 /* Reset dasar */
 * {
   margin: 0;

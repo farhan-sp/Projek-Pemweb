@@ -22,4 +22,7 @@ $routes->get("/unit", 'Pages::unit_description');
 $routes->get('/contact', 'Pages::contact');
 
 // Send Message
-$routes->post('/contact', 'MailSender::gmail');
+$routes->post('/contact', 'Pages::save_feedback');
+
+// Converting BLOB to Image
+$routes->get('/unit/send/(:segment)', 'Pages::convert/$1');

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,24 @@
     <title>About Us | GSK Properti</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/about.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Tampilan Navigasi -->
     <header>
-            <nav>
-                <div class="logo-container">
-                    <img src="/img/logo.jpg" alt="Logo Perusahaan" class="logo" style="border-radius: 50px;">
-                </div>
-                <div class="nav-bar">
+        <nav>
+            <div class="logo-container">
+                <img src="/img/logo.jpg" alt="Logo Perusahaan" class="logo" style="border-radius: 50px;">
+            </div>
+            <div class="nav-bar">
                 <a href="home">Home</a>
                 <a href="about" class="active">About Us</a>
-                <a href="sales">Sales</a> 
+                <a href="sales">Sales</a>
                 <a href="contact">Contact</a>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <!-- About Content -->
@@ -34,7 +35,7 @@
                 <div class="section history">
                     <h2>Our History</h2>
                     <p>Perusahaan GSK Properti adalah perusahaan yang bergerak di bidang properti baik jasa dan pengembangan. Perusahaan kami berdiri sejak tahun 2024, sebagai anak perusahaan dari PT. Griya Sultra Konstruksi. Sebelumnya kami telah sukses membangun dan menjual ratusan unit rumah subsidi di Perumahan GSK Residence Puuwatu. Tepatnya di Kota Kendari kami telah memiliki nama dengan bangunan yang berkualitas dan tentunya terpercaya. Segera kunjungi kami dengan produk-produk terbaru yang pasti anda inginkan.</p>
-                </div>  
+                </div>
 
                 <!-- Vision & Mission -->
                 <div class="section visi-misi">
@@ -45,7 +46,7 @@
                         <h2>Visi Perusahaan</h2>
                         <p class="visi">"Menjadi pengembang properti terdepan yang menciptakan hunian berkualitas dan terpercaya untuk meningkatkan kualitas hidup masyarakat Indonesia."</p>
                     </div>
-                    
+
                     <div class="vm-card">
                         <div class="vm-icon">
                             <i class="fas fa-bullseye"></i>
@@ -58,7 +59,7 @@
                 </div>
 
                 <!-- Team -->
-                <div class="section Team">
+                <div class="section team">
                     <h2>Our Team</h2>
                     <div class="team-cards">
                         <div class="team-card">
@@ -71,6 +72,13 @@
             </div>
         </section>
     </main>
+
+    <!-- Pop Up Notif -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <a href="https://wa.me/6281357758855" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Footer -->
     <footer>
@@ -109,4 +117,5 @@
         </div>
     </footer>
 </body>
+
 </html>

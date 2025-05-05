@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSK Properti - Sales Unit</title>
+    <title>Sales | GSK Properti</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/sales.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/sales.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 <img src="img/Tampak Rumah 2.jpg" alt="Tampak Samping">
                 <div class="gallery-desc">Tampak Samping Unit</div>
             </div>
-            <div class="gallery-item" onclick="openLightbox('img/Tampak rumah 3.jpg')">
+            <div class="gallery-item" onclick="openLightbox('img/Tampak Rumah 3.jpg')">
                 <img src="img/Tampak Rumah 3.jpg" alt="Tampak Atas">
                 <div class="gallery-desc">Tampak Atas Unit</div>
             </div>
@@ -88,6 +88,11 @@
         <img id="lightbox-img" src="" alt="Preview">
     </div>
 
+    <!-- Pop Up Notif -->
+    <a href="https://wa.me/6281357758855" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -123,18 +128,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function openLightbox(src) {
-            document.getElementById('lightbox').classList.add('active');
-            document.getElementById('lightbox-img').src = src;
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-            document.getElementById('lightbox-img').src = '';
-        }
-    </script>
 </body>
 
 </html>

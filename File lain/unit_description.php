@@ -38,7 +38,7 @@
       </div>
       <div class="house-card">
          <img src="/img/Kamar Mandi.jpg" alt="kamar">
-         <div class="house-desc">Kamar</div>
+         <div class="house-desc">Kamarr</div>
       </div>
       <div class="house-card">
          <img src="/img/ruang dapur.jpg" alt="kamar">

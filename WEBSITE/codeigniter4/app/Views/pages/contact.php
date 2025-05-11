@@ -28,18 +28,6 @@
     </header>
 
     <main>
-        <section class="contact-whatsapp">
-            <div class="container">
-                <div class="whatsapp-content">
-                    <i class="fab fa-whatsapp"></i>
-                    <h2>Let's Connect</h2>
-                    <p>Want to collaborate with us? Contact us via WhatsApp to get a quick response!</p>
-                    <h3><i>"Always remember Must Have a Home Now !!!"</i></h3>
-                    <a href="https://wa.me/6281357758855" target="_blank" class="whatsapp-button">Send Message</a>
-                </div>
-            </div>
-        </section>
-
         <section class="contact-section">
             <div class="container">
                 <div class="section-header">
@@ -47,61 +35,20 @@
                     <p>We would love to hear your thoughts on the information we have provided. Feel free to contact us if you have any questions or queries.</p>
                 </div>
 
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="info-details">
-                                <h3>Visit Us</h3>
-                                <p>Jln. Chairil Anwar, Puuwatu Perumahan GSK Residence Blok B, No. 10</p>
-                            </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form method="post" id="kirim-pesan">
+                        <div class="form-group">
+                            <input type="text" name="nama" placeholder="Your Name" required>
                         </div>
-
-                        <a href="https://wa.me/6281357758855" target="_blank" style="text-decoration: none; color : black;">
-                            <div class="info-card">
-                                <div class="info-icon"><i class="fas fa-phone"></i></div>
-                                <div class="info-details">
-                                    <h3>Call Us</h3>
-                                    <p>+62 813-5775-8855</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="mailto:gsk.property.id@gmail.com" style="text-decoration: none; color : black;">
-                            <div class="info-card">
-                                <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                                <div class="info-details">
-                                    <h3>Email Us</h3>
-                                    <p>gsk.property.id@gmail.com</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class="social-links">
-                            <h3>Follow Us</h3>
-                            <div class="social-icons">
-                                <a href="https://web.facebook.com/gskresidence/?locale=id_ID&_rdc=1&_rdr#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/gsk_residence/" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/@griyasultrakonstruksi" title="YouTube"><i class="fab fa-youtube"></i></a>
-                            </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
-                    </div>
-
-                    <div class="contact-form">
-                        <h3>Send Us a Message</h3>
-                        <form method="post" id="kirim-pesan">
-                            <div class="form-group">
-                                <input type="text" name="nama" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="pesan" placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-submit">Send Message</button>
-                        </form>
-                    </div>
+                        <div class="form-group">
+                            <textarea name="pesan" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>

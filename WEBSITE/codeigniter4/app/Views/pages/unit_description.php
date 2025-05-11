@@ -65,12 +65,15 @@
 
   <!-- Whatsapp -->
   <section class="contact-whatsapp">
-    <div class="container">
-      <div class="whatsapp-content">
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/6281357758855" target="_blank" class="whatsapp-button">Call Marketing</a>
+      <div class="container">
+          <div class="whatsapp-content">
+              <i class="fab fa-whatsapp"></i>
+              <h2>Let's Connect</h2>
+              <p>Want to collaborate with us? Contact us via WhatsApp to get a quick response!</p>
+              <h3><i>"Always remember Must Have a Home Now !!!"</i></h3>
+              <a href="https://wa.me/6281357758855" target="_blank" class="whatsapp-button">Send Message</a>
+          </div>
       </div>
-    </div>
   </section>
   
   <!-- Lightbox Modal -->

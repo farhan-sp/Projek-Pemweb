@@ -26,39 +26,44 @@
   <h2>Unit Description</h2>
 
   <section class="main-content">
-
+    <!-- Gambar Ruangan -->
     <div class="house">
-      <div id="TestImage">
-        <img src="None" alt="Gambar Map Ruangan" title="Map">
+      <div class="house-card">
+         <img src="/img/Kamar 1.jpg" alt="kamar">
+         <div class="house-desc">Kamar</div>
       </div>
       <div class="house-card">
-        <!-- Tambahkan gambar untuk ruangan dengan tags image -->
+         <img src="/img/kamar 2.jpg" alt="kamar">
+         <div class="house-desc">Kamar</div>
+      </div>
+      <div class="house-card">
+         <img src="/img/Kamar Mandi.jpg" alt="kamar">
+         <div class="house-desc">Kamarr</div>
+      </div>
+      <div class="house-card">
+         <img src="/img/ruang dapur.jpg" alt="kamar">
+         <div class="house-desc">Kamar</div>
       </div>
     </div>
-
-    <div class="details">
-      <table>
-        <thead>
-          <tr>
-            <th>Details Rumah</th>
-            <th>Details Fasilitas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <ul>
-                <li><!-- Tambahkan data untuk Material (Tabel kiri) --></li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li><!-- Tambahkan data untuk Fasilitas (Tabel Kanan)--></li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Detail Fasilitas dan Material -->
+    <div class="details-wrapper">
+      <div class="detail-container">
+        <div class="detail-header">Details Rumah</div>
+        <ul>
+          <!-- Material -->
+          <li>Beton</li>
+          <li>Kapur</li>
+          <li>Pasir</li>
+        </ul>
+      </div>
+      <div class="detail-container">
+        <div class="detail-header">Details Fasilitas</div>
+        <ul>
+          <!-- Fasiltas -->
+          <li>Lapangan</li>
+          <li>Masjid</li>
+        </ul>
+      </div>
     </div>
   </section>
   <footer>
@@ -98,4 +103,3 @@
   </footer>
 </body>
 </html>
-<!--  -->

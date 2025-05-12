@@ -26,3 +26,6 @@ $routes->post('/contact', 'Pages::save_feedback');
 
 // Converting BLOB to Image
 $routes->get('/unit/send/(:segment)', 'Pages::convert/$1');
+
+// Admin
+$routes->get('/admin', 'Pages::admin');

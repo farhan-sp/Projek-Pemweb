@@ -31,9 +31,14 @@
       <div id="TestImage">
         <img src="None" alt="Gambar Map Ruangan" title="Map">
       </div>
-      <div class="house-card">
-        <!-- Tambahkan gambar untuk ruangan dengan tags image -->
-      </div>
+      <?php foreach ($room as $r) : ?>
+        <div class="house-card">
+          <img 
+            src="<?= base_url('unit/send/' . $r['nama_ruangan']) ?>" 
+            alt="<?= $r['nama_ruangan'] ?>" 
+            title="<?= $r['nama_ruangan'] ?>" />
+        </div>
+      <?php endforeach; ?>
     </div>
 
     <div class="details">
@@ -48,12 +53,16 @@
           <tr>
             <td>
               <ul>
-                <li><!-- Tambahkan data untuk Material (Tabel kiri) --></li>
+                <?php foreach ($material as $m) : ?>
+                    <li><?= $m['nama_material'] ?></li>
+                <?php endforeach; ?>
               </ul>
             </td>
             <td>
               <ul>
-                <li><!-- Tambahkan data untuk Fasilitas (Tabel Kanan)--></li>
+                <?php foreach ($facility as $f) : ?>
+                    <li><?= $f['nama_fasilitas'] ?></li>
+                <?php endforeach; ?>
               </ul>
             </td>
           </tr>
@@ -98,4 +107,3 @@
   </footer>
 </body>
 </html>
-<!--  -->

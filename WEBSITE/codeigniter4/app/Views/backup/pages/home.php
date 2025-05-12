@@ -41,6 +41,7 @@
             <img src="img/btn.png" alt="Partner 1">
             <img src="img/btns.png" alt="Partner 2">
             <img src="img/bsi.png" alt="Partner 3">
+            <img src="img/pabrik_gsk.jpeg" alt="Partner 4">
             <!-- Tambahkan partner lainnya sesuai kebutuhan -->
         </div>
     </section>

@@ -7,6 +7,20 @@
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/contact.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $('#kirim-pesan').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: '/contact',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    dataType: 'json'
+                    success:
+                        alert("Data berhasil dikirim!");
+                });
+            });
+        </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
@@ -83,9 +97,9 @@
                             </div>
                         </div>
 
-                        <div class="contact-form">
+                        <div method="post" class="contact-form">
                             <h3>Send Us a Message</h3>
-                            <form method="post" id="kirim-pesan">
+                            <form id="kirim-pesan">
                                 <div class="form-group">
                                     <input type="text" name="nama" placeholder="Your Name" required>
                                 </div>
@@ -138,21 +152,5 @@
                 </div>
             </div>
         </footer>
-
-        <script>
-            $('#kirim-pesan').submit(function(e) {
-                $.ajax({
-                    url: '/contact',
-                    type: 'POST',
-                    data: $(this).serialize(),
-                    success: function(response) {
-                        alert("Pesan Berhasil Dikirim!");
-                    },
-                    error: function(xhr, status, error) {
-                        alert("Pesan Gagal!");
-                    }
-                });
-            });
-        </script>
     </body>
 </html>

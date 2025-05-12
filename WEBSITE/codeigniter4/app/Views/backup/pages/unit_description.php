@@ -15,9 +15,9 @@
             <img src="/img/logo.jp" alt="Logo Perusahaan" class="logo" style="border-radius: 50px;">
         </div>
         <div class="nav-bar">
-        <a href="home" class="active">Home</a>
+        <a href="home">Home</a>
         <a href="about">About Us</a>
-        <a href="sales">Sales</a> 
+        <a href="sales" class="active">Sales</a> 
         <a href="contact">Contact</a>
         </div>
     </nav>
@@ -28,10 +28,17 @@
   <section class="main-content">
 
     <div class="house">
-      <img src="img/kamar.jpg" alt="Kamar" title="Kamar Tidur" />
-      <img src="img/dapur.jpg" alt="Dapur" title="Dapur" />
-      <img src="img/ruang-tamu.jpg" alt="Ruang Tamu" title="Ruang Tamu" />
-      <img src="img/kamar-mandi.jpg" alt="Kamar Mandi" title="Kamar Mandi" />
+      <div id="TestImage">
+        <img src="None" alt="Gambar Map Ruangan" title="Map">
+      </div>
+      <?php foreach ($room as $r) : ?>
+        <div class="house-card">
+          <img 
+            src="<?= base_url('unit/send/' . $r['nama_ruangan']) ?>" 
+            alt="<?= $r['nama_ruangan'] ?>" 
+            title="<?= $r['nama_ruangan'] ?>" />
+        </div>
+      <?php endforeach; ?>
     </div>
 
     <div class="details">
@@ -46,18 +53,16 @@
           <tr>
             <td>
               <ul>
-                <li>Konstruksi beton bertulang berkualitas</li>
-                <li>Dinding bata merah dengan finishing cat tahan lama</li>
-                <li>Lantai keramik 40x40 cm anti slip</li>
-                <li>Atap genteng metal tahan karat</li>
+                <?php foreach ($material as $m) : ?>
+                    <li><?= $m['nama_material'] ?></li>
+                <?php endforeach; ?>
               </ul>
             </td>
             <td>
               <ul>
-                <li>Keamanan 24 jam dengan sistem CCTV</li>
-                <li>Area bermain anak yang luas dan aman</li>
-                <li>Taman hijau dan jogging track</li>
-                <li>Sarana olahraga dan clubhouse</li>
+                <?php foreach ($facility as $f) : ?>
+                    <li><?= $f['nama_fasilitas'] ?></li>
+                <?php endforeach; ?>
               </ul>
             </td>
           </tr>

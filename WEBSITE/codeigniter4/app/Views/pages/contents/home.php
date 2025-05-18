@@ -6,15 +6,19 @@
     <section class="main">
         <div class="main-content">
             <h1>GSK PROPERTI</h1>
-            <p>Memberikan pelayanan terbaik untuk kebutuhan Anda dengan dedikasi dan kepercayaan.</p>
+            <p><b>Memberikan pelayanan terbaik untuk kebutuhan Anda dengan dedikasi dan kepercayaan.</b></p>
             <img src="img/highlight GSK.jpg" alt="Highlight GSK" class="main-img">
         </div>
     </section>
 
     <!-- News Section -->
     <section class="centered-title">
-        <h2>News Update</h2>
-        <button>Edit</button>
+        <div class="news-header">
+            <?php if (session()->get('role') === 'admin') :?>
+                <button><a href="edit">Edit</a></button>
+            <?php endif; ?>
+            <h2>News Update</h2>
+        </div>
         <section class=" news-carousel">
             <div class=" news-card">
                 <!-- NEWS 1 -->

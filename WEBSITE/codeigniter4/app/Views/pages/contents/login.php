@@ -7,18 +7,12 @@
         <title>Forum Login</title>
     </head>
     <body>
-        <form class="container" method="post" action="tambah-admin">
-            <h1>Tambah Admin</h1>
-            <label>Nama : </label>
-            <input type="text" name="nama">
+        <form class="container" method="post" action="cek-login">
+            <h1>Login</h1>
             <label>Email : </label>
-            <input type="text" name="email">
-            <label>Role</label>
-            <select name="role">
-                <option value="admin">Admin</option>
-            </select>
+            <input type="text" name="email" required>
             <label>Password : </label>
-            <input type="text" name="password">
+            <input type="password" name="password" required>
 
             <button type="submit">Kirim</button>
         </form>

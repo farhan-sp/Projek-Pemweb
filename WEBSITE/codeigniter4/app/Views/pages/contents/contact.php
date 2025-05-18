@@ -11,7 +11,7 @@
 
             <div class="contact-form">
                 <h3>Send Us a Message</h3>
-                <form method="post" id="kirim-pesan">
+                <form action="<?= base_url('/contact/send') ?>" method="post" id="kirim-pesan">
                     <div class="form-group">
                         <input type="text" name="nama" placeholder="Your Name" required>
                     </div>

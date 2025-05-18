@@ -108,6 +108,11 @@ h2 {
     background: #004080;
     color: #fff;
   }
+
+  /* Location */
+  .location-section > iframe{
+    width: 100%;
+  }
   
   /* Responsif */
   @media (max-width: 768px) {

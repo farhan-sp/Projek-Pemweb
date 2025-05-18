@@ -37,17 +37,17 @@ class Pages extends BaseController
     // For Views
     public function home()
     {   
-        return view('/pages/contents/home');
+        return view('/pages/home.php');
     }
 
     public function about() 
     {
-        return view('/pages/contents/about');
+        return view('/pages/about.php');
     }
 
     public function sales() 
     {
-        return view('/pages/contents/sales');
+        return view('/pages/sales.php');
     }
 
     public function unit_description() 
@@ -62,16 +62,12 @@ class Pages extends BaseController
             'material' => $material
         ];
         
-        return view('/pages/contents/unit_description', $data);
+        return view('/pages/unit_description.php', $data);
     }
 
     public function contact() 
     {
-        return view('/pages/contents/contact');
-    }
-
-    public function admin() {
-        return view('/pages/contents/admin');
+        return view('/pages/contact');
     }
 
     // Get Data

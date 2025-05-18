@@ -2,21 +2,6 @@
 <?= $this->section('content')?>
 
 <main>
-  <!-- Navigasi -->
-  <header>
-    <nav>
-      <div class="logo-container">
-        <img src="img/logo.jpg" alt="Logo Perusahaan" class="logo" style="border-radius: 50px;">
-      </div>
-      <div class="nav-bar">
-        <a href="home">Home</a>
-        <a href="about">About Us</a>
-        <a href="sales">Sales</a>
-        <a href="contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
   <h2>Unit Description</h2>
   <section class="main-content">
     <div class="house">
@@ -31,9 +16,42 @@
       <?php endforeach; ?>
     </div>
 
+    <!-- Gambar Icons -->
+    <div class="unit-specs">
+      <div class="spec-item">
+        <div class="spec-icon"><i class="fas fa-ruler-combined"></i></div>
+        <div class="spec-value">77 m²</div>
+        <div class="spec-label">Luas Bangunan</div>
+      </div>
+
+      <div class="spec-item">
+        <div class="spec-icon"><i class="fas fa-vector-square"></i></div>
+        <div class="spec-value">105 m²</div>
+        <div class="spec-label">Luas Tanah</div>
+      </div>
+
+      <div class="spec-item">
+        <div class="spec-icon"><i class="fas fa-bed"></i></div>
+        <div class="spec-value">2</div>
+        <div class="spec-label">Kamar Tidur</div>
+      </div>
+
+      <div class="spec-item">
+        <div class="spec-icon"><i class="fas fa-bath"></i></div>
+        <div class="spec-value">1</div>
+        <div class="spec-label">Kamar Mandi</div>
+      </div>
+
+      <div class="spec-item">
+        <div class="spec-icon"><i class="fas fa-car"></i></div>
+        <div class="spec-value">1</div>
+        <div class="spec-label">Garasi</div>
+      </div>
+    </div>
+
     <div class="details-wrapper">
       <div class="detail-container">
-        <div class="detail-header">Details Rumah</div>
+        <div class="detail-header">Details Material Rumah</div>
         <ul>
           <!-- Material -->
           <?php foreach($material as $m) : ?>

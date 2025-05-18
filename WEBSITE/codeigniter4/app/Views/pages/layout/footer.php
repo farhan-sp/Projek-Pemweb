@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="/img/logo.jpg" alt="GSK Properti Logo" style="border-radius: 50px;">
+                <img src="<?= base_url('img/logo.jpg')?>" alt="GSK Properti Logo" style="border-radius: 50px;">
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>

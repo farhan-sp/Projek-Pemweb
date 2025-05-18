@@ -1,167 +1,173 @@
+main {
+  min-height: calc(100vh - 200px);
+}
+
 /* Main Section */
 .main {
-    position: relative;
-    padding: 140px 20px 80px;
-    text-align: center;
-    overflow: hidden;
-  }
-  .main::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('/img/lokasi_perumahan.jpg') center/cover;
-    filter: blur(6px) brightness(0.8);
-    transform: scale(1.1);
-    z-index: 0;
-  }
-  .main-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: auto;
-  }
-  .main h1, .main p {
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  .main h1 {
-    font-size: 48px;
-    font-weight: 700;
-  }
-  .main p {
-    font-size: 1.125rem;
-    margin-top: 20px;
-  }
-  .main-img {
-    margin-top: 30px;
-    max-width: 100%;
-    border-radius: 16px;
-    box-shadow: var(--box-shadow);
-  }
-  
-  /* Sections */
-  .centered-section {
-    text-align: center;
-    padding: 80px 20px;
-    margin-bottom: 5px;
-  }
-  .centered-section img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-  }
-  .card {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .card-plus {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
-  }
-  .card-plus::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 5px;
-    background: var(--accent-color);
-  }
-  .card-plus:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-  }
-  .card-plus img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  /* Reusable Card Styles (News & Testimonials) */
-  .news-carousel, .testimonial-carousel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 0 20px 80px;
-  }
-  .news-card, .testimonial-card {
-    background: white;
-    border-radius: 10px;
-    padding: 40px 30px;
-    flex: 1 1 400px;
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    border-top: 4px solid var(--accent-color);
-  }
-  .news-card:hover, .testimonial-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* News Specific */
-  .news-img img {
-    width: 45vh;
-    height: 50vh;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  .news-text, .testimonial-text {
-    font-style: italic;
-    color: var(--light-text);
-    margin-bottom: 20px;
-  }
-  .date-news, .client-name {
-    font-weight: 700;
-    color: var(--primary-color);
-  }
-  .date-news {
-    justify-content: center;
-    align-items: flex-end;
-  }
-  
-  /* Testimonials */
-  .client-img img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  /* Headings */
-  h2 {
-    font-size: 36px;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
-    padding-bottom: 15px;
-  }
-  
-  /* Partner Logos */
-  .partner-logos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  .partner-logos img {
-    max-height: 80px;
-    transition: transform 0.3s ease;
-  }
-  
+  position: relative;
+  padding: 140px 20px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/ci4-new/public/img/lokasi_perumahan.jpg') center/cover;
+  filter: blur(6px) brightness(0.8);
+  transform: scale(1.1);
+  z-index: 0;
+}
+.main-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+}
+.main h1, .main p {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.main h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.main p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.main-img {
+  margin-top: 30px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+}
+
+/* Sections */
+.centered-section {
+  text-align: center;
+  padding: 20px 20px;
+  margin-bottom: 5px;
+}
+.centered-section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card-plus {
+  background: white;
+  border-radius: 10px;
+  padding-top: 20px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+.card-plus::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 5px;
+  background: var(--accent-color);
+}
+.card-plus:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.card-plus img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Reusable Card Styles (News & Testimonials) */
+.news-carousel, .testimonial-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px 80px;
+}
+.news-card, .testimonial-card {
+  background: white;
+  border-radius: 10px;
+  width: 500px;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid var(--accent-color);
+  cursor: pointer;
+}
+.news-card:hover, .testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* News Specific */
+.news-img img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+transition: filter 0.3s;
+}
+.news-text, .testimonial-text {
+  font-style: italic;
+  color: var(--light-text);
+  margin-bottom: 20px;
+}
+.date-news, .client-name {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.date-news {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Testimonials */
+.client-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+/* Partner Logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.partner-logos img {
+  max-height: 80px;
+  transition: transform 0.3s ease;
+}

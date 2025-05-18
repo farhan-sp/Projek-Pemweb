@@ -1,3 +1,7 @@
+/* Main */
+main {
+    min-height: calc(100vh - 200px); /* 100vh dikurangi tinggi header+footer */
+}
 /* Section Headers */
 .section-header {
     text-align: center;

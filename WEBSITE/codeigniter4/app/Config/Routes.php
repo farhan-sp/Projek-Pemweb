@@ -23,21 +23,17 @@ $routes->get('/contact', 'Pages::contact');
 // Edit Page
 $routes->get('/edit', 'Pages::edit');
 // Thanks
-$routes->get('/contact/thanks', 'Pages::thanks');
+$routes->get('/thanks', 'Pages::thanks');
 
 // Send Message
-$routes->post('/contact/send', 'Pages::save_feedback');
-
-// Converting BLOB to Image
-$routes->get('/unit/send/(:segment)', 'Pages::convertRoom/$1');
-$routes->get('/edit/send/(:segment)', 'Pages::convertBerita/$1');
+$routes->post('/contact/send', 'CRUD::save_feedback');
 
 // Admin
 $routes->get('/admin', 'Pages::admin');
 $routes->get('/login', 'Pages::login');
-$routes->post('/tambah-admin', 'Pages::add_admin');
-$routes->post('/cek-login', 'Pages::cek_login');
-$routes->get('/logout', 'Pages::logout');
+$routes->post('/tambah-admin', 'Users::add_admin');
+$routes->post('/cek-login', 'Users::cek_login');
+$routes->get('/logout', 'Users::logout');
 
 // Filter
 $routes->group('admin', ['filter' => 'admin'], function($routes) {
@@ -45,7 +41,7 @@ $routes->group('admin', ['filter' => 'admin'], function($routes) {
 });
 
 // CRUD
-$routes->post('/edit/tambah', 'Pages::simpan');
-$routes->post('/edit/delete/(:num)', 'Pages::delete/$1');
-$routes->post('/edit/update/(:num)', 'Pages::update/$1');
+$routes->post('/edit/tambah', 'CRUD::simpan');
+$routes->post('/edit/delete/(:num)', 'CRUD::delete/$1');
+$routes->post('/edit/update/(:num)', 'CRUD::update/$1');
 

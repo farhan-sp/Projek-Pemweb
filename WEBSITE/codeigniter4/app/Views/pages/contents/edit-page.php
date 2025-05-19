@@ -8,8 +8,8 @@
 </head>
 <body>
     <a href="<?= base_url('/home')?>"><button>Kembali Ke Home</button></a>
-    <h1>Edit Data</h1>
     <div class="table-container">
+        <h1>Edit Data</h1>
         <table id="table-data" border="1">
             <thead>
                 <tr>
@@ -23,19 +23,21 @@
                 <?php foreach($berita as $b): ?>
                     <tr id="data-row">
                         <td><?= $b['id'] ?></td>
-                        <td><?= $b['gambar'] ?></td>
+                        <td><img src="<?= base_url('img/' . $b['gambar']) ?>"></td>
                         <td><?= $b['nama'] ?></td>
                         <td><?= $b['keterangan'] ?></td>
                         <td><?= $b['tanggal'] ?></td>
                         <td><?= $b['kata_kunci'] ?></td>
-                        <td id="update-btn-<?= $b['id']?>"><button onclick="toggleUpdate(<?= $b['id']?>)">Update</button></td>
+                        <td id="update-btn-<?= $b['id']?>">
+                            <button class='button-update' onclick="toggleUpdate(<?= $b['id']?>)">Update</button>
+                        </td>
                         <td id="delete-btn-<?= $b['id']?>">
                             <form action="<?= base_url('/edit/delete/') . $b['id'] ?>" method="post" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
-                                <button type="submit">Hapus</button>
+                                <button class='button-delete' type="submit">Hapus</button>
                             </form>
                         </td>
                     </tr>
-                    <tr id="toggleUpdate-<?= $b['id']?>" style="display: none;">
+                    <tr id="toggleUpdate-<?= $b['id']?>" class="hidden">
                         <td colspan="<?= count($kolom) + 2 ?>">
                             <form action="<?= base_url('/edit/update/') . $b['id'] ?>"  method="post">
                                 <label>Nama File Gambar</label><br>
@@ -48,7 +50,7 @@
                                 <input type="date" name="kolom4" required>
                                 <label>Kata Kunci</label><br>
                                 <input type="text" name="kolom5" maxlength="100" required>
-                                <input id="simpan-btn" type="submit" onclick="toggleUpdate(<?= $b['id']?>)">
+                                <input id="update-btn" value="Kirim" type="submit" onclick="toggleUpdate(<?= $b['id']?>)">
                             </form>
                         </td>
                     </tr>
@@ -78,9 +80,9 @@
             <input type="date" name="kolom4" required>
             <br><label>Kata Kunci</label><br>
             <input type="text" name="kolom5" maxlength="100" required>
-            <input id="simpan-btn" type="submit" onclick="toggleForm()">
+            <input id="add-btn" type="submit" onclick="toggleForm()">
         </form>
-        <button id="batal-btn" onclick="toggleForm()">Batal</button>
+        <button id="delete-btn" onclick="toggleForm()">Batal</button>
     </div>
 
     <script src="<?= base_url('/js/edit.js') ?>"></script>

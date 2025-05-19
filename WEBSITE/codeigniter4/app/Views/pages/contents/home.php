@@ -14,48 +14,27 @@
     <!-- News Section -->
     <section class="centered-title">
         <div class="news-header">
-            <?php if (session()->get('role') === 'admin') :?>
-                <button><a href="edit">Edit</a></button>
-            <?php endif; ?>
             <h2>News Update</h2>
         </div>
+        <?php if (session()->get('role') === 'admin') :?>
+            <div class="edit-button-container">
+                <a href="<?= base_url('edit') ?>" class="edit-btn">Edit Berita</a>
+            </div>
+        <?php endif; ?>
         <section class=" news-carousel">
-            <div class=" news-card">
-                <!-- NEWS 1 -->
-                <div class="news-img">
-                    <img src="img/Tampak Rumah 3.jpg" alt="news">
+            <?php foreach($berita as $b) :?>
+                <div class=" news-card">
+                    <div class="news-img">
+                        <img src="<?= base_url('/img/' . $b['gambar']) ?>" alt="news">
+                    </div>
+                    <div class="news-text">
+                        <p><?= $b['keterangan'] ?></p>
+                    </div>
+                    <div class="date-news">
+                        <h3><?= $b['tanggal'] ?></h3>
+                    </div>
                 </div>
-                <div class="news-text">
-                    "News pembangunana di laksanakan pada tanggal 22 agustus tahun 2023"
-                </div>
-                <div class="date-news">
-                    <h3>News: 22/08/2023</h3>
-                </div>
-            </div>
-                <!-- NEWS 2 -->
-            <div class="news-card">
-                <div class="news-img">
-                    <img src="img/Atas Depan.jpg" alt="news">
-                </div>
-                <div class=" news-text">
-                    "Rumah subsidi yang layak dan bagus untuk dimiliki, lokasi cukup strategis dikota Kendari. telah berdasarkan regulasi pemeritah telah terbangun sebanyak 98 unit rumah subsidi. pembangunan terus di laksanakan hingga 200 unit rumah subsidi."
-                </div>
-                <div class="date-news">
-                    <h3>News: 19/12/2023</h3>
-                </div>
-            </div>
-                <!-- NEWS 3 -->
-            <div class="news-card">
-                <div class="news-img">
-                    <img src="img/Tampak Rumah 2.jpg" alt="news">
-                </div>
-                <div class="news-text">
-                    "Perumahan yangtelah telah terjual sebanyak 98 unit dari 112 unit tersedia✨"
-                </div>
-                <div class="date-news">
-                    <h3>News: 02/01/2024</h3>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </section>
     </section>
 

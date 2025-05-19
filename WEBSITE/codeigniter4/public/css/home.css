@@ -171,3 +171,28 @@ h2 {
   max-height: 80px;
   transition: transform 0.3s ease;
 }
+
+.edit-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 20px;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}

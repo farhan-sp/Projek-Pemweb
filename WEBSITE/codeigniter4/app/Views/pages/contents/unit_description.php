@@ -6,12 +6,12 @@
   <section class="main-content">
     <div class="house">
       <?php foreach($room as $r) : ?>
-        <div class="house-card" onclick="openLightbox('<?= base_url('unit/send/' . $r['nama_ruangan']) ?>')">
+        <div class="house-card" onclick="openLightbox('<?= base_url('img/' . $r['gambar']) ?>')">
           <img 
-            src="<?= base_url('unit/send/' . $r['nama_ruangan']) ?>" 
-            alt="<?= $r['nama_ruangan'] ?>" 
-            title="<?= $r['nama_ruangan'] ?>" />
-            <div class="house-desc"><?= $r['nama_ruangan'] ?></div>
+            src="<?= base_url('img/' . $r['gambar']) ?>" 
+            alt="<?= $r['nama'] ?>" 
+            title="<?= $r['nama'] ?>" />
+            <div class="house-desc"><?= $r['nama'] ?></div>
           </div>
       <?php endforeach; ?>
     </div>

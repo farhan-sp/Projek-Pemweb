@@ -1,2 +1,2 @@
 <?php
-echo site_url('home');
+echo exec('whoami');

@@ -5,7 +5,8 @@ use CodeIgniter\Model;
 
 class GetRoomsModel extends Model {
     protected $table      = 'Ruangan';
-    protected $primaryKey = 'nama_ruangan';
-    protected $useAutoIncrement = false;
+    protected $primaryKey = 'id';
+    protected $useAutoIncrement = true;
+    protected $allowedFields = ['gambar', 'nama'];
 }
 ?>

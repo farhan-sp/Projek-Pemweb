@@ -13,10 +13,10 @@
             <a href="<?= base_url('sales') ?>" class="<?= ($currentPage === 'sales') ? 'active' : '' ?>">Sales</a>
             <a href="<?= base_url('contact') ?>" class="<?= ($currentPage === 'contact') ? 'active' : '' ?>">Contact</a>
             <?php if (session()->get('role') === 'admin') : ?>
-                <a href="<?= site_url('logout') ?>">Logout</a>
+                <a style="border: 1px solid; background-color: grey;" href="<?= site_url('logout') ?>">Logout</a>
             <?php else :?>
-                <a href="<?= site_url('login') ?>">Login</a>
-            <?php endif; ?>        
+                <a style="border: 1px solid;" href="<?= site_url('login') ?>">Login</a>
+            <?php endif; ?>
         </div>
     </nav>
 </header>

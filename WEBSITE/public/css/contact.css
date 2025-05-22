@@ -1,0 +1,80 @@
+/* Main */
+main {
+    min-height: calc(100vh - 200px); /* 100vh dikurangi tinggi header+footer */
+}
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.section-header p {
+    color: var(--light-text);
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+}
+
+.btn-submit:hover{
+    background-color: royalblue;
+}
